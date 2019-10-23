@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="renderer" content="webkit">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>前端页面预览</title>
+		<link rel="stylesheet" type="text/css" href="css/style-v2.css"/>
+	</head>
+	<!--[if lt IE 10]>
+	<script type="text/javascript">
+		alert('请使用高版本IE或其他浏览器！如果是360就切换到极速模式')
+	</script>
+	<![endif]-->
+
+	<body>
+		<div class="video-wrap">
+			<video autoplay="autoplay" loop="true" preload="auto" class="video-bg">
+				<source src="img/ti9.mp4" type="video/mp4">
+				<!-- <source src="img/dota2.webm" type="video/webm"> -->
+			</video>
+			<div class="video-top-bg"></div>
+		</div>
+		<section class="menu-wrap">
+			<h1>前端页面预览</h1>
+			<div class="explain">不知道写啥</div>
+			<div class="switch">
+				<input type="checkbox" name="toggle">
+				<label for="toggle"><i></i></label>
+				<span></span>
+			</div>
+			<div class="project">
+				<h2>新版移动端</h2>
+				<div class="version">
+					<h2>新版移动端已完成</h2>
+					<ul>
+						<li><a href="http://daohang.yhqtb.vip/" target="_blank">导航</a></li>
+						<li><a href="http://book.yhqtb.vip/#/" target="_blank">小说</a></li>
+						<li><a href="http://www.gzui.net/" target="_blank">博客</a></li>
+						<li><a href="http://yhqtb.vip/" target="_blank">优惠券</a></li>
+						<li><a href="http://notes.yhqtb.vip/" target="_blank">便签</a></li>
+						<li><a href="http://work.yhqtb.vip/" target="_blank">番茄时间</a></li>
+						<li><a href="http://daohang.yhqtb.vip/localManga.html" target="_blank">看本地漫画</a></li>
+						<li><a href="http://piano.yhqtb.vip/#/" target="_blank">钢琴</a></li>
+					</ul>
+				</div>
+				
+				<div class="version">
+					<h2>新增新版移动端</h2>
+					<ul>
+						<li><a href="/XcabcGlobalMobile2018/brand.html" target="_blank">1汽车品牌</a></li>
+						<li><a href="/XcabcGlobalMobile2018/car.html" target="_blank">2车型</a></li>
+						<li><a href="/XcabcGlobalMobile2018/library-series.html" target="_blank">3车系</a></li>
+						<li><a href="/XcabcGlobalMobile2018/personage.html" target="_blank">4团购经纪人</a></li>
+						<li><a href="/XcabcGlobalMobile2018/tuan-detail.html" target="_blank">5团购详情</a></li>
+						<li><a href="/XcabcGlobalMobile2018/price-brand.html" target="_blank">6报价品牌页</a></li>
+						<li><a href="/XcabcGlobalMobile2018/price-series.html" target="_blank">7报价车系</a></li>
+						<li><a href="/XcabcGlobalMobile2018/price-style.html" target="_blank">8报价车型</a></li>
+						<li><a href="/XcabcGlobalMobile2018/model-jobs.html" target="_blank">9模特工作</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="project">
+				<h2>杂项</h2>
+				<div class="version">
+					<ul>
+						<li><a href="http://daohang.yhqtb.vip/" target="_blank">导航</a></li>
+						<li><a href="http://book.yhqtb.vip/#/" target="_blank">小说</a></li>
+						<li><a href="http://www.gzui.net/" target="_blank">博客</a></li>
+						<li><a href="http://yhqtb.vip/" target="_blank">优惠券</a></li>
+						<li><a href="http://notes.yhqtb.vip/" target="_blank">便签</a></li>
+						<li><a href="http://work.yhqtb.vip/" target="_blank">番茄时间</a></li>
+						<li><a href="http://daohang.yhqtb.vip/localManga.html" target="_blank">看本地漫画</a></li>
+						<li><a href="http://piano.yhqtb.vip/#/" target="_blank">钢琴</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="project">
+				<h2>点COM点CN</h2>
+				<div class="version">
+					<ul>
+						<li><a href="/com-cn/index.html" target="_blank">首页</a></li>
+						<li><a href="/com-cn/popularize.html" target="_blank">推广页</a></li>
+						<li><a href="/com-cn/about.html" target="_blank">关于我们</a></li>
+						<li><a href="/com-cn/contact.html" target="_blank">联系我们</a></li>
+					</ul>
+				</div>
+			</div>
+			
+
+		</section>
+		<!--搜索开始-->
+		<section class="right-wrap">
+			<section class="search">
+				<div class="field">
+					<div class="icon"></div>
+					<input type="text" name="nope" id="nope" placeholder="请输入汉字" maxlength="40" />
+				</div>
+			</section>
+			<iframe src="" width="100%" height="">
+				
+			</iframe>
+		</section>
+
+		<script src="http://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+		<script src="http://cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+		<script src="js/jquery-qrcode-0.17.0.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			var h2 = $('.project h2');
+			for(var i = 0; i < h2.length; i++) {
+				h2.eq(i).attr('data-index', i)
+			};
+			$('.project h2').click(function() {
+				var dom = $(this);
+				var index = dom.attr('data-index');
+				$.cookie("current", index, {
+					path: '/'
+				});
+				if(dom.nextAll('.version').length == 1) {
+					dom.parent().toggleClass('open');
+					dom.next('.version').addClass('open');
+					dom.next('.version').find('h2').addClass('f-dn');
+				} else {
+					dom.parent().toggleClass('open');
+				}
+
+			});
+			$('.switch input').click(function() {
+				if($(this).is(':checked')) {
+					$('.project,.version').addClass('open');
+				} else {
+					$('.project,.version').removeClass('open');
+				}
+			});
+			$('.search .icon').click(function() {
+				$('.field input').val('');
+			});
+
+			if($.cookie("current") != null) {
+				var index = $.cookie("current");
+				var _this = $('.project h2').eq(index);
+				_this.parent().addClass("open");
+				if(_this.parent().hasClass('open')) {
+					_this.parent().parent().addClass("open");
+				};
+				if(_this.nextAll('.version').length == 1) {
+					_this.next('.version').addClass("open");
+					_this.next('.version').find('h2').addClass('f-dn');
+				}
+
+			} else {
+				$('.project h2').removeClass('open');
+			};
+		</script>
+
+		<script src="js/autocompleter.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			/**
+			 * Crayola colors in JSON format
+			 * from: https://gist.github.com/jjdelc/1868136
+			 */
+			var data = [];
+			$('.version a').each(function() {
+				var dom = $(this);
+				var t = dom.text();
+				var u = dom.attr('href');
+				var v = dom.parent().parent().siblings('h2').text();
+				var _temp = {
+					"label": t,
+					"url": u,
+					"v": v
+				};
+				data.push(_temp)
+			});
+			$(function() {
+				$('#nope').autocompleter({
+					// marker for autocomplete matches
+					highlightMatches: true,
+					// object to local or url to remote search
+					source: data,
+					// custom template
+					template: '<a href="{{ url }}" target="_blank">{{ label }}</a> {{ v }}',
+					// show hint
+					hint: true,
+					// abort source if empty field
+					empty: false,
+					// max results
+					//limit: 30,
+					callback: function(value, index, selected) {
+						if(selected) {
+							window.open(selected.url, '_blank');
+							$('.field input').val('');
+							//$('.icon').css('background-color', '#f60');
+						}
+					}
+				});
+			});
+		</script>
+		<script type="text/javascript">
+			var menuWrap = $('.menu-wrap');
+			var _iframe = ('.right-wrap iframe');
+			jQuery.fn.setHight = function() {
+				this.css("height", $(window).height() + "px");
+				return this;
+			}
+
+			menuWrap.setHight();
+			$('.video-wrap').setHight();
+			//_iframe.setHight();
+
+			$(window).resize(function() {
+
+				menuWrap.setHight();
+				//_iframe.setHight();
+				$('.video-wrap').setHight();
+
+			});
+			
+		</script>
+		<script type="text/javascript">
+			$(function(){
+				$('.version li').hover(function(){
+					var dom = $(this).find('a');
+					if(dom.has('canvas').length){
+						dom.find('canvas').removeClass('f-dn');
+						return true;
+					}else{
+						var links = dom.attr('href');
+						var host = window.location.host;
+						var labeltxt = dom.text();
+						dom.qrcode({
+							text: window.location.protocol+'//'+host+links,
+							size: 400,
+							mode: 2,
+							label: labeltxt,
+							minVersion: 7,
+							mPosY: 0.5,
+							radius: 0.5,
+							quiet: 4,
+							ecLevel: 'H',
+						});
+					}					
+				},function(){
+					$('.version a canvas').addClass('f-dn');
+				});
+			});
+		</script>
+	</body>
+
+</html>
