@@ -169,6 +169,11 @@ h2 {
 	text-decoration: none;
 	color: #FFF842;
 }
+
+.version li a::before{content: '';width: 8px;height: 8px;border-radius: 50%;background-color: #fff;position: absolute;left: -20px;top: 8px;}
+.version .green a::before{background-color: #01d601;}
+.version .red a::before{background-color: red;}
+
 .version a canvas{
 	position: fixed;
 	left: 50%;
